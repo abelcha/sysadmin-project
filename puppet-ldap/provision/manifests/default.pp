@@ -12,5 +12,8 @@ class { 'puppet': }
 class { 'networking': }
 
 if $hostname == 'puppet' {
-  class { 'puppet::server': }
+class { 'puppet::server': }
+}
+if $hostname == 'ldapserver' {
+class { 'ldap': }
 }

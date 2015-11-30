@@ -1,0 +1,27 @@
+dn: dc=example,dc=com
+objectClass: dcObject
+objectClass: organization
+o: Epitech
+dc: epitech
+
+dn: ou=epitech,dc=example,dc=com
+objectClass: organizationalUnit
+ou: epitech
+
+dn: cn=admin, ou=epitech,dc=example,dc=com
+userPassword: admin
+objectClass: person
+sn: admin account
+cn: admin
+
+dn: cn=epitech-pedago,ou=groups,dc=example,dc=com
+objectclass: groupofnames
+cn: epitech-pedago
+description: pedago epitech
+member: cn=leslie,ou=epitech,dc=example,dc=com
+
+dn: cn=epitech-compta,ou=groups,dc=example,dc=com
+objectclass: groupofnames
+cn: epitech-compta
+description: compta epitech
+member: cn=stephanie,ou=epitech,dc=example,dc=com

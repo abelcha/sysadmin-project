@@ -36,4 +36,5 @@ class networking {
     command => "sudo ifconfig eth0 down",
     user => root,
 	}
+
 }
